@@ -70,7 +70,7 @@ As far as we want to control what happens in the data lake we will need differen
 We will use these tables:
 
 
-![Alt text](https://github.com/hdelas/Loka-Exercise/tree/main/Images/DataBaseDiagram.png "DataBaseDiagram")
+![Alt text](https://github.com/hdelas/Loka-Exercise/tree/main/Images/DataBaseDiagram.png?raw=true)
 
 The Users table is used to grant access to the different users of the data lake. We could add a role field and join it to the controlDatalake in order to restrict the access of some users to sensible data.
 
