@@ -28,8 +28,8 @@ In order make it a bit customizable there is a config file where it will help to
 **Delete_file:**  Set to 1 in order to delete the files in DataLake (We need to fill FileDel and  FolderPath) <br />
 
 #### Security Variables ####
-**user:** You need to input a correct user to run the program <br />
-**password:** You need to input a correct pass to run the program <br />
+**user:** You need to write a correct user to run the program <br />
+**password:** You need to write a correct pass to run the program <br />
 
 ## Tutorial ##
 
@@ -48,8 +48,8 @@ configparser <br />
 
 This Data lake will be divided in several phases: 
 
-
-![Alt text](https://github.com/hdelas/Loka-Exercise/tree/main/Images/DataLakeFlowChart.png "DataLakeFlowChart")
+![DataLakeFlowChart](https://user-images.githubusercontent.com/45793502/198589654-1b30b6a8-b2ce-44b3-af92-306e0b2e2ba0.png)
+https://github.com/hdelas/Loka-Exercise/tree/main/Images/DataLakeFlowChart.png?raw=true
 
 
 First we will check credentials. In the future, users and roles could be created as well as security by file.
@@ -69,8 +69,8 @@ As far as we want to control what happens in the data lake we will need differen
 
 We will use these tables:
 
-
-![Alt text](https://github.com/hdelas/Loka-Exercise/tree/main/Images/DataBaseDiagram.png?raw=true)
+![DataBaseDiagram](https://user-images.githubusercontent.com/45793502/198589728-3294512f-32f7-45c3-922f-3cbb896d5034.png)
+https://github.com/hdelas/Loka-Exercise/tree/main/Images/DataBaseDiagram.png
 
 The Users table is used to grant access to the different users of the data lake. We could add a role field and join it to the controlDatalake in order to restrict the access of some users to sensible data.
 
@@ -92,8 +92,8 @@ A process is monitored and managed to ensure data quality. Verifications are con
 
 In the case of data enrichment, orchestrator can be programmed to identify changes in the source data so that updated data can be loaded.
 
-## Imporvements for the future ##
+## Improvements for the future ##
 
-Create backups every time a modification is done.
-Create security by role and by file.
-Improve the Ingestion techniques in order to be able to process streaming data or large files with spark or Hdfs Hadoop.
+Create backups every time a modification is done.  <br />
+Create security by role and by file. <br />
+Improve the Ingestion techniques in order to be able to process streaming data or large files with spark or Hdfs Hadoop.  <br />
