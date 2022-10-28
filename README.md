@@ -6,7 +6,7 @@
  
  Get set up locally in two steps:
 
-#### Change variables according your local configuration and run cell by cell ####
+#### Change variables according to your local configuration and run cell by cell the file DataLakeProcessor.ipynb ####
 
 ### Variables ### 
 
@@ -49,7 +49,7 @@ configparser
 This Data lake will be divided in several phases: 
 
 
-https://github.com/hdelas/Loka-Exercise/Images/DataLakeFlowChart.png
+https://github.com/hdelas/Loka-Exercise/tree/main/Images/DataLakeFlowChart.png
 
 
 First we will check credentials. In the future, users and roles could be created as well as security by file.
@@ -69,7 +69,7 @@ As far as we want to control what happens in the data lake we will need differen
 
 We will use these tables:
 
-https://github.com/hdelas/Loka-Exercise/Images/DataBaseDiagram.png
+https://github.com/hdelas/Loka-Exercise/tree/main/Images/DataBaseDiagram.png
 
 The Users table is used to grant access to the different users of the data lake. We could add a role field and join it to the controlDatalake in order to restrict the access of some users to sensible data.
 
