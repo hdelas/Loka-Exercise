@@ -2,7 +2,7 @@
 
 
 
-# Getting Started #
+### Getting Started ###
  
  Get set up locally in two steps:
 
@@ -31,7 +31,7 @@ In order make it a bit customizable there is a config file where it will help to
 **user:** You need to input a correct user to run the program
 **password:** You need to input a correct pass to run the program
 
-# Tutorial #
+## Tutorial ##
 
 In order to make work the script we need to install and import these list of libraries:
 pandas
@@ -44,12 +44,12 @@ sqlite3
 configparser
 
 
-# Data Lake Flowchart #
+## Data Lake Flowchart ##
 
 This Data lake will be divided in several phases: 
 
 
-https://github.com/hdelas/Loka-Exercise/Images/DataLake/DataLakeFlowChart.png
+https://github.com/hdelas/Loka-Exercise/Images/DataLakeFlowChart.png
 
 
 First we will check credentials. In the future, users and roles could be created as well as security by file.
@@ -63,13 +63,13 @@ Table Information: When the file contains semistructured or structured data, we 
 After analyzing the type of data we have if the load variable is activated the program will copy the files selected into the data lake. A governance table will be generated in order to control the operations that we do in the data lake.
 
 
-# Data Base Flowchart #
+## Data Base Flowchart ##
 
 As far as we want to control what happens in the data lake we will need different tables to know the information about files and the data we are storing into the data lake.
 
 We will use these tables:
 
-https://github.com/hdelas/Loka-Exercise/Images/DataLake/DataBaseDiagram.png
+https://github.com/hdelas/Loka-Exercise/Images/DataBaseDiagram.png
 
 The Users table is used to grant access to the different users of the data lake. We could add a role field and join it to the controlDatalake in order to restrict the access of some users to sensible data.
 
@@ -77,7 +77,7 @@ For each file, we will have information such as the modification date or the siz
 
 Finally, it is critical to register every operation we do in the data lake so the information could be lost or deleted by error, this table could be used to create a backup process every time a movement is done.
 
-# Analyzing aspects of this data lake #
+## Analyzing aspects of this data lake ##
 
 These implementations of a data lake classify the information on the basis of two types of files: csvs and excels.
 
@@ -91,7 +91,7 @@ A process is monitored and managed to ensure data quality. Verifications are con
 
 In the case of data enrichment, orchestrator can be programmed to identify changes in the source data so that updated data can be loaded.
 
-# Imporvements for the future #
+## Imporvements for the future ##
 
 Create backups every time a modification is done.
 Create security by role and by file.

@@ -36,7 +36,7 @@ def Update (TableID,Table_Name,UploadDate,ModificationDate,Origin,Destiny,Operat
     db.commit()
 
 def checkuser(user):
-    db = sqlite3.connect("DataLakeDB.db")
+    db = connect_db() 
     cursor = db.cursor()
     cursor.execute("SELECT * FROM Users where User = ? ",[user])
     respuesta_consulta = cursor.fetchall()
