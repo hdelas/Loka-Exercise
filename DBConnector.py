@@ -1,4 +1,5 @@
 import sqlite3
+import sqlalchemy
 
 def connect_db():
     db = sqlite3.connect("DataLakeDB.db")
